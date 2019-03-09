@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div style="height:550px;
+        width:650px;
+        background-color:#e0ecff;
+        margin: 35px auto;
+        padding:20px;
+        font-family: cursive;
+        border-radius: 10px;
+        box-shadow: 0px 4px 0px;
+        -webkit-box-shadow: 0px 4px 0px;
+        -moz-box-shadow: 0px 4px 0px;
+        -o-box-shadow: 0px 4px 0px;
+        -ms-box-shadow: 0px 4px 0px;
+        position: relative;">
+    <h1 style="text-align:center;padding:10px">Plagiarism Checker</h1>
+     <div class="container">
+      <form method="post" action="{{ url_for('plagiarismChecker') }}">
+        <label for="text_to_check">Enter text to check for plagiarism:</label>
+        <BR><textarea cols="60" rows="10" name="text_to_check"></textarea><br>
+        <BR><input type="submit" />
+            </BR></BR>
+         </form>
+        </div>
+      </div>
+    </body>
+</html>
